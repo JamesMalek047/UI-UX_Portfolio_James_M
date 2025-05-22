@@ -1,0 +1,194 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #09305a;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0 20px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+}
+.small-img {
+  width: 50%;
+  height: 50%;
+  
+}
+.project-title {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: white;
+}
+
+.custom-footer {
+  background-color: #09305a; /* or any color you like */
+}
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  gap: 2rem; /* Controls the space between text and image */
+}
+
+.intro-text {
+  color: white;
+  font-family: sans-serif;
+}
+
+.intro-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-text .highlight {
+  color: #007bff; /* Bootstrap blue, feel free to change */
+}
+
+.intro-text p {
+  font-style: italic;
+  font-size: 1rem;
+  color: #dddddd;
+}
+
+.intro-image img {
+  width: 140px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50% / 60%; /* Oval effect */
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('Background.png'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: rgb(5, 40, 96);
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Optional: darkens image for better contrast */
+  z-index: 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;         /* vertical center */
+  justify-content: flex-start; /* aligns everything to the left */
+  gap: 2rem;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.intro-image img {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50% / 60%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.intro-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.intro-text .highlight {
+  color: #3399ff;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+.intro-image img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50% / 60%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-section {
+  background-color: #0a1f44;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Optional card styles (if not already styled) */
+.project-card {
+  background-color: white;
+  color: black;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.intro-text {
+  color: #ffffff; /* pure white */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); /* deeper shadow */
+}
+
+.intro-text p {
+  color: #f1f1f1;
+}
