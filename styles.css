@@ -67,13 +67,11 @@ body {
 }
 
 .intro-text {
-  color: #222;
-  font-family: sans-serif;
-  font-size: 0.9rem;
-  line-height: 1.4;
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  justify-content: center;
   text-align: left;
-  word-wrap: break-word;
-  max-width: 100%;
 }
 
 .intro-text h2 {
@@ -103,7 +101,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('DHBackground.png');
+  background-image: url('BFF.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -131,10 +129,13 @@ body {
   flex-direction: row;
   align-items: flex-start;
   gap: 1.5rem;
-  max-width: 600px;
-  width: fit-content;
+  max-width: 1000px;     /* Increased from 600px */
+  min-width: 800px;      /* Optional for symmetry */
+  width: 80%;            /* Use relative width */
+  margin-right: auto;    /* Pushes right side toward center */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  overflow-wrap: break-word;
+  align-items: stretch; /* Let children grow to same height */
+
 }
 
 /* Overlay */
@@ -166,30 +167,40 @@ body {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  /* .hero-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-      padding: 1rem; 
+ .hero-card {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 95%;
+  max-width: none;
+  min-width: unset;
+  margin: 0 auto;
+}
 
-  } */
+.intro-image {
+  order: -1; /* Move image to top */
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.intro-image img {
+  width: 150px;
+  height: auto;
+  max-width: 90%;
+}
+
+.intro-text {
+  text-align: center;
+}
+
 
   .intro-text {
     text-align: center;
     max-width: 90%;
   }
 
-  /* .intro-image {
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-  } */
-
-  /* .intro-image img {
-    width: 150px;
-    max-width: 100%;
-    height: auto;
-  } */
   .hero-section {
   flex-direction: column; /* Stack vertically */
   justify-content: flex-start;
@@ -197,6 +208,8 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   height: auto; /* <--- IMPORTANT: Allow height to expand */
+  background-position: center center; /* Adjust focal point for smaller screens */
+  background-size: cover;
 }
 .hero-content {
   flex-direction: column;
@@ -211,19 +224,6 @@ body {
   max-width: 90%;
   padding: 1.2rem;
   text-align: center;
-}
-
-.intro-image {
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.intro-image img {
-  width: 160px;
-  height: auto;
-  max-width: 90%;
 }
 }
 
