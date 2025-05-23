@@ -1,10 +1,10 @@
-
 body {
   font-family: Arial, sans-serif;
 }
 
+/* Navbar */
 .navbar {
-  background-color: #09305a;
+  background-color: rgb(9, 48, 90);
 }
 
 .navbar a {
@@ -18,11 +18,7 @@ body {
   text-decoration: underline;
 }
 
-.intro {
-  text-align: center;
-  margin-top: 40px;
-}
-
+/* Card Styles */
 .card:hover {
   transform: scale(1.03);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -39,130 +35,125 @@ body {
   font-size: 14px;
   color: #555;
 }
+
+.project-card {
+  background-color: white;
+  color: black;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+/* Image Utility */
 .small-img {
   width: 50%;
   height: 50%;
-  
-}
-.project-title {
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
 }
 
-.title {
-  color: white;
-}
-
+/* Footer */
 .custom-footer {
-  background-color: #09305a; /* or any color you like */
+  background-color: #09305a;
 }
 
+/* Intro Section */
 .intro-section {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
-  gap: 2rem; /* Controls the space between text and image */
+  gap: 2rem;
 }
 
 .intro-text {
-  color: white;
+  color: #222;
   font-family: sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: left;
+  word-wrap: break-word;
+  max-width: 100%;
 }
 
 .intro-text h2 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-}
-
-.intro-text .highlight {
-  color: #007bff; /* Bootstrap blue, feel free to change */
-}
-
-.intro-text p {
-  font-style: italic;
-  font-size: 1rem;
-  color: #dddddd;
-}
-
-.intro-image img {
-  width: 140px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50% / 60%; /* Oval effect */
-}
-
-.hero-section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: url('Background.png'); /* Replace with your background image */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  color: rgb(5, 40, 96);
-  overflow: hidden;
-}
-
-.overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Optional: darkens image for better contrast */
-  z-index: 0;
-}
-
-.hero-content {
-  display: flex;
-  align-items: center;         /* vertical center */
-  justify-content: flex-start; /* aligns everything to the left */
-  gap: 2rem;
-  height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.intro-image img {
-  width: 160px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50% / 60%;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-}
-
-.intro-text h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .intro-text .highlight {
   color: #3399ff;
 }
 
-.intro-text p {
-  font-size: 1rem;
-  color: #f0f0f0;
-  line-height: 1.6;
-}
-
 .intro-image img {
-  width: 180px;
-  height: 220px;
-  object-fit: cover;
+  width: 20vw;
+  max-width: 200px;
+  height: auto;
   border-radius: 50% / 60%;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  border: 8px solid #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  display: block;
+  margin: 0;
 }
 
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('DHBackground.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 2rem 2rem 5vw;
+  overflow: hidden;
+}
+
+.hero-content {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 1rem;
+}
+
+/* Hero Card */
+.hero-card {
+  background-color: rgba(9, 48, 90, 0.9);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+  max-width: 600px;
+  width: fit-content;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  overflow-wrap: break-word;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+/* Project Section */
 .project-section {
   background-color: #0a1f44;
   color: white;
   padding: 4rem 2rem;
 }
-
 
 .project-grid {
   display: flex;
@@ -173,22 +164,67 @@ body {
   margin: 0 auto;
 }
 
-/* Optional card styles (if not already styled) */
-.project-card {
-  background-color: white;
-  color: black;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  width: 250px;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  /* .hero-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+      padding: 1rem; 
+
+  } */
+
+  .intro-text {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  /* .intro-image {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+  } */
+
+  /* .intro-image img {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+  } */
+  .hero-section {
+  flex-direction: column; /* Stack vertically */
+  justify-content: flex-start;
+  padding-top: 6rem; /* Give space under navbar */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: auto; /* <--- IMPORTANT: Allow height to expand */
+}
+.hero-content {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.hero-card {
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+  padding: 1.2rem;
   text-align: center;
 }
 
-.intro-text {
-  color: #ffffff; /* pure white */
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); /* deeper shadow */
+.intro-image {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.intro-text p {
-  color: #f1f1f1;
+.intro-image img {
+  width: 160px;
+  height: auto;
+  max-width: 90%;
 }
+}
+
+
