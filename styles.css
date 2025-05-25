@@ -150,3 +150,66 @@ body {
 h1, h2 {
   font-family: 'Roboto', sans-serif;
 }
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+ .top-card {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 95%;
+  max-width: none;
+  min-width: unset;
+  margin: 0 auto;
+}
+
+.intro-image {
+  order: -1; /* Move image to top */
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.intro-image img {
+  width: 150px;
+  height: auto;
+  max-width: 90%;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+
+  .intro-text {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .top-section {
+  flex-direction: column; /* Stack vertically */
+  justify-content: flex-start;
+  padding-top: 6rem; /* Give space under navbar */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: auto; /* <--- IMPORTANT: Allow height to expand */
+  background-position: center center; /* Adjust focal point for smaller screens */
+  background-size: cover;
+}
+.top-content {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.top-card {
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+  padding: 1.2rem;
+  text-align: center;
+}
+}
