@@ -163,7 +163,7 @@ h1, h2 {
   min-width: unset;
   margin: 0 auto;
 }
-
+  
 .intro-image {
   order: -1; /* Move image to top */
   margin-bottom: 1rem;
