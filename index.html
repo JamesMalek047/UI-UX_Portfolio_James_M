@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>James Malek Portfolio</title>
-
-  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
-<body>
 
-  <!-- Navbar -->
+<body>
   <nav class="navbar py-3">
     <div class="container d-flex justify-content-center">
       <a class="nav-link" href="#">James Malek</a>
@@ -23,95 +21,90 @@
       <a class="nav-link" href="#">About Me</a>
     </div>
   </nav>
-
-  <!-- Intro Text -->
-<!-- Hero Section with Background -->
-<section class="hero-section">
-  <div class="overlay"></div>
-  <div class="hero-content">
-    <div class="hero-card">
-      <div class="intro-image">
-        <img src="Portrait.png" alt="Profile Picture">
+  <section class="top-section">
+    <div class="overlay"></div>
+    <div class="top-content">
+      <div class="top-card">
+        <div class="intro-image">
+          <img src="Portrait.png" alt="Profile Picture">
+        </div>
+        <div class="intro-text">
+          <h2>Hi, I'm James Malek</span></h2>
+          <p>
+            a passionate software engineering student at the University of Ottawa. I have a vision to build
+            software applications that cover many aspects of the world all fuelled by creativity and purpose.
+            That however is only the backend portion of my programming vision. However, this portfolio is only my second
+            attempt
+            at UI/UX coding as I am following a uOttawa course, SEG3525. This course is teaching me the fundamentals of
+            UI/UX design.
+          </p>
+        </div>
       </div>
-      <div class="intro-text">
-        <h2>Hi, I'm James Malek</span></h2>
-        <p>
-           a passionate software engineering student at the University of Ottawa, driven by a vision to build meaningful solutions at the intersection of technology, creativity, and purpose. With a strong foundation in backend development, AI exploration, and real-world project experience, I thrive on turning complex problems into impactful digital tools. I believe that technology is not just about code — it’s about shaping the future in ways that serve people and glorify something greater than ourselves.
-        </p>
+    </div>
+  </section>
+
+
+
+
+  <div class="project-section">
+    <div class="text-center" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+      <h2 class="fw-bold" style="margin: 0; font-family: 'Montserrat', sans-serif; color: white;">Projects</h2>
+    </div>
+    <div class="container py-5">
+      <div class="row gx-2 gy-4">
+
+        <div class="col-6 col-lg-3 d-flex">
+          <div class="card rounded-4 p-3 shadow-sm text-center flex-fill d-flex flex-column"
+            style="height: 100%; max-height: 380px;">
+            <img src="Service.png" class="card-img-top mb-3" alt="Project 1 Image"
+              style="max-height: 160px; object-fit: cover;">
+            <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;">Leaf Identifier</h5>
+            <p class="card-text " style="font-family: 'Montserrat', sans-serif;">An AI application to determine...</p>
+            <a href="project1.html" class="btn btn-outline-primary mt-3">View More</a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="card rounded-4 p-3 shadow-sm text-center" style="height: 100%; max-height: 380px;">
+            <img src="Game.png" class="card-img-top mb-3" alt="Project 2 Image"
+              style="max-height: 160px; object-fit: cover;">
+            <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;">Simulator</h5>
+            <p class="card-text" style="font-family: 'Montserrat', sans-serif;">A game to simulate...</p>
+            <a href="project2.html" class="btn btn-outline-primary mt-3">View More</a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="card rounded-4 p-3 shadow-sm text-center" style="height: 100%; max-height: 380px;">
+            <img src="Commerce.png" class="card-img-top mb-3" alt="Project 3 Image"
+              style="max-height: 160px; object-fit: cover;">
+            <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;">Products</h5>
+            <p class="card-text" style="font-family: 'Montserrat', sans-serif;">A commerce shop for...</p>
+            <a href="project3.html" class="btn btn-outline-primary mt-3">View More</a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="card rounded-4 p-3 shadow-sm text-center" style="height: 100%; max-height: 380px;">
+            <img src="Analytics.png" class="card-img-top mb-3" alt="Project 4 Image"
+              style="max-height: 160px; object-fit: cover;">
+            <h5 class="card-title" style="font-family: 'Montserrat', sans-serif;">Analytics</h5>
+            <p class="card-text" style="font-family: 'Montserrat', sans-serif;">An analytics website for...</p>
+            <a href="project4.html" class="btn btn-outline-primary mt-3">View More</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
-</section>
 
-
-
-
-<div class="project-section">
-  <div class="project-grid">
-    <!-- Individual project cards go here -->
-  
-<div class="text-center" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
-  <h2 class="fw-bold" style="margin: 0; color: white;">Divine Horizons Projects</h2>
-</div>
-
-  <!-- Cards -->
-  <div class="container py-5">
-  <div class="row gx-2 gy-4">
-
-    <div class="col-6 col-lg-3 d-flex">
-      <div class="card rounded-4 p-3 shadow-sm text-center flex-fill d-flex flex-column" style="height: 100%; max-height: 380px;">
-        <img src="Service.png" class="card-img-top mb-3" alt="Project 2 Image" style="max-height: 160px; object-fit: cover;">
-        <h5 class="card-title">Leaf Identifier</h5>
-        <p class="card-text">A deep dive into backend APIs and performance.</p>
-        <a href="project1.html" class="btn btn-outline-primary mt-3">View More</a>
-      </div>
-    </div>
-
-    <div class="col-6 col-lg-3">
-      <div class="card rounded-4 p-3 shadow-sm text-center" style="height: 100%; max-height: 380px;">
-        <img src="Game.png" class="card-img-top mb-3" alt="Project 2 Image" style="max-height: 160px; object-fit: cover;">
-        <h5 class="card-title">Simulator</h5>
-        <p class="card-text">A deep dive into backend APIs and performance.</p>
-        <a href="project2.html" class="btn btn-outline-primary mt-3">View More</a>
-      </div>
-    </div>
-
-    <div class="col-6 col-lg-3">
-      <div class="card rounded-4 p-3 shadow-sm text-center" style="height: 100%; max-height: 380px;">
-        <img src="Commerce.png" class="card-img-top mb-3" alt="Project 2 Image" style="max-height: 160px; object-fit: cover;">
-        <h5 class="card-title">Products</h5>
-        <p class="card-text">A deep dive into backend APIs and performance.</p>
-        <a href="project3.html" class="btn btn-outline-primary mt-3">View More</a>
-      </div>
-    </div>
-
-    <div class="col-6 col-lg-3">
-      <div class="card rounded-4 p-3 shadow-sm text-center" style="height: 100%; max-height: 380px;">
-        <img src="Analytics.png" class="card-img-top mb-3" alt="Project 2 Image" style="max-height: 160px; object-fit: cover;">
-        <h5 class="card-title">Analytics</h5>
-        <p class="card-text">A deep dive into backend APIs and performance.</p>
-        <a href="project4.html" class="btn btn-outline-primary mt-3">View More</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-</div>
-</div>
-
-
-  <!-- Bootstrap JS (optional for interactive components) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<footer class="custom-footer">
-  <div class="footer-container">
-    <p class="footer-text">James Malek Portfolio.</p>
-  </div>
-</footer>
-
+  <footer class="custom-footer">
+    <div class="footer-container">
+      <p class="footer-text">James Malek.</p>
+    </div>
+  </footer>
 </body>
+
 </html>
-
-
-

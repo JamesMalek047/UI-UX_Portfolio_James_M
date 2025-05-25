@@ -18,7 +18,6 @@ body {
   text-decoration: underline;
 }
 
-/* Card Styles */
 .card:hover {
   transform: scale(1.03);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -46,13 +45,11 @@ body {
   text-align: center;
 }
 
-/* Image Utility */
 .small-img {
   width: 50%;
   height: 50%;
 }
 
-/* Footer */
 .custom-footer {
   background-color: rgb(2, 18, 36);
   color: white;
@@ -61,7 +58,6 @@ body {
   margin-top: 0;
 }
 
-/* Intro Section */
 .intro-section {
   display: flex;
   align-items: center;
@@ -90,7 +86,7 @@ body {
 }
 
 .intro-image img {
-  height: 300px; /* Taller image */
+  height: 300px;
   width: auto;
   border-radius: 50% / 60%;
   border: 8px solid #ffffff;
@@ -98,9 +94,7 @@ body {
   display: block;
 }
 
-
-/* Hero Section */
-.hero-section {
+.top-section {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -114,7 +108,7 @@ body {
   overflow: hidden;
 }
 
-.hero-content {
+.top-content {
   z-index: 1;
   position: relative;
   display: flex;
@@ -123,8 +117,7 @@ body {
   padding-right: 1rem;
 }
 
-/* Hero Card */
-.hero-card {
+.top-card {
   background-color: rgba(15, 48, 85, 0.8);
   padding: 2.5rem;
   border-radius: 1rem;
@@ -134,12 +127,10 @@ body {
   gap: 2rem;
   max-width: 900px;
   width: 85%;
-  min-height: 400px; /* Make the card taller */
+  min-height: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-
-/* Overlay */
 .overlay {
   position: absolute;
   top: 0;
@@ -147,96 +138,15 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 0;
 }
 
-/* Project Section */
 .project-section {
   background-color: rgb(15, 48, 85);
   color: white;
-  padding: 4rem 2rem;
+  padding: 64px 32px;
   margin-bottom: 0;
-}
-
-.project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 h1, h2 {
   font-family: 'Roboto', sans-serif;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
- .hero-card {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 95%;
-  max-width: none;
-  min-width: unset;
-  margin: 0 auto;
-}
-
-.intro-image {
-  order: -1; /* Move image to top */
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.intro-image img {
-  width: 150px;
-  height: auto;
-  max-width: 90%;
-}
-
-.intro-text {
-  text-align: center;
-}
-
-
-  .intro-text {
-    text-align: center;
-    max-width: 90%;
-  }
-
-  .hero-section {
-  flex-direction: column; /* Stack vertically */
-  justify-content: flex-start;
-  padding-top: 6rem; /* Give space under navbar */
-  padding-left: 1rem;
-  padding-right: 1rem;
-  height: auto; /* <--- IMPORTANT: Allow height to expand */
-  background-position: center center; /* Adjust focal point for smaller screens */
-  background-size: cover;
-}
-.hero-content {
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-}
-
-.hero-card {
-  flex-direction: column;
-  align-items: center;
-  max-width: 90%;
-  padding: 1.2rem;
-  text-align: center;
-}
-}
-
-
